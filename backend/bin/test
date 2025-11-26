@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+# Rails 테스트 실행 스크립트
+
+require_relative '../config/environment'
+
+# 테스트 환경 설정
+ENV['RAILS_ENV'] = 'test'
+
+# 테스트 실행
+system("bundle exec rails test")
